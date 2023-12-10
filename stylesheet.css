@@ -1,0 +1,36 @@
+body{
+    background-color: #fbf7f5;
+    color: #332E2B;
+}
+/*
+#F6F3E6 (Alabaster)
+
+*/
+div{
+    max-width: 80%;
+    margin: auto;
+
+}
+.banner{
+    text-align:center;
+}
+.topnav{
+    border-top: 2px solid #332E2B;
+    border-bottom: 2px solid #332E2B;
+    background-color: 	#fbf7f5;
+    overflow: hidden;
+}
+.active{
+    color: #332E2B;
+}
+.inactive{
+    color: #3EA29B;
+}
+a{
+    text-decoration:none;
+    color: #3EA29B;
+}
+article{
+    max-width: 80%;
+    margin: auto;
+}
