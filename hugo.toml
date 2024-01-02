@@ -1,0 +1,8 @@
+baseURL = 'https://kaidelregno.github.io/'
+languageCode = 'en-us'
+title = 'Kai Del Regno'
+theme = 'paperesque'
+
+[[params.topmenu]]
+name = "blog"
+url = "posts/"
