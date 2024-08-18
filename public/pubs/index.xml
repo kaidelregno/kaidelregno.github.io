@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pubs on Kai Del Regno</title>
+    <link>https://kaidelregno.github.io/pubs/</link>
+    <description>Recent content in Pubs on Kai Del Regno</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://kaidelregno.github.io/pubs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://kaidelregno.github.io/pubs/dummy_pub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://kaidelregno.github.io/pubs/dummy_pub/</guid>
+      <description>Publications coming soon </description>
+    </item>
+  </channel>
+</rss>

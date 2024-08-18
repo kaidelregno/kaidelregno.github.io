@@ -1,0 +1,17 @@
+<table class = "publication"><tbody>
+    <tr>
+      <td style="padding:20px;width:40%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='equipleth_611'>
+          <img src="{{.Get "teaser" }}" width="325">
+        </div>
+
+      </td>
+      <td style="padding:0px;width:100%;vertical-align:middle">
+        
+          <h1>{{ .Get "title" }}</h1>
+
+        {{.Inner | markdownify}}
+      </td>
+    </tr> 
+</tbody></table>
