@@ -1,6 +1,0 @@
-[submodule "themes/hugo-texify2"]
-	path = themes/hugo-texify2
-	url = https://github.com/weastur/hugo-texify2
-[submodule "themes/paperesque"]
-	path = themes/paperesque
-	url = https://github.com/capnfabs/paperesque
