@@ -23,7 +23,7 @@ palette = "base16-dark"
 # Sidebar: about/bio
 [params.about]
 title = "About"
-description = "I am an M.S. student in Electrical and Computer Engineering at UCLA performing research in the [Visual Machines Group](https://visual.ee.ucla.edu) with Professor Achuta Kadambi. I am interested in computer vision, computational imaging, and generative AI. I received my B.S. in Electrical Engineering from UCLA in 2023."
+description = "I am an M.S. student in Electrical and Computer Engineering at UCLA performing research in the [Visual Machines Group](https://visual.ee.ucla.edu) advised by Professor [Achuta Kadambi](https://www.ee.ucla.edu/achuta-kadambi/).  I received my B.S. in Electrical Engineering from UCLA in 2023."
 # or use an image:
 logo_image = "images/me.jpg"
 
@@ -33,14 +33,14 @@ logo_image = "images/me.jpg"
 # * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
 
 [[params.socialLinks]]
-icon = "fa-brands fa-github"
-title = "GitHub"
-url = "https://github.com/kaidelregno"
-
-[[params.socialLinks]]
 icon = "fa-solid fa-envelope"
 title = "Email"
 url = "kaidelregno@gmail.com"
+
+[[params.socialLinks]]
+icon = "ai ai-google-scholar"
+title = "Google Scholar"
+url = "https://scholar.google.com/citations?user=rojAm24AAAAJ&hl=en&oi=ao"
 
 [[params.socialLinks]]
 icon = "fa-brands fa-linkedin"
@@ -51,6 +51,11 @@ url = "https://www.linkedin.com/in/kai-del-regno-103269222/"
 icon = "ai ai-orcid"
 title = "ORCID"
 url = "https://orcid.org/0009-0000-5730-6711"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/kaidelregno"
 
 [menu]
 
