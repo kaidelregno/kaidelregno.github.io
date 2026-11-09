@@ -1,0 +1,266 @@
+/* Light palette. Edit these values to change the light theme. */
+:root {
+  color-scheme: light dark;
+  --bg: #f8fcfe;
+  --text: #22211f;
+  --muted: #69655f;
+  --link: #1f5f99;
+  --rule: #d9e3ea;
+  --surface: #ebf2f7;
+}
+
+/* Dark palette. Shown when the visitor's system is set to dark. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17181a;
+    --text: #e6e4df;
+    --muted: #a09c95;
+    --link: #8cbcf0;
+    --rule: #34353a;
+    --surface: #222327;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Everything sized in rem grows on wider screens:
+   100% at 1280px wide and below, up to 137.5% at 2240px and above. */
+html {
+  font-size: clamp(100%, 50% + 0.625vw, 137.5%);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 3.5rem 1.25rem 2.5rem;
+  background: var(--bg);
+  color: var(--text);
+  font: 1.125rem/1.55 "Times New Roman", Times, serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.25rem;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.375rem;
+}
+
+h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 0.5rem;
+}
+
+.intro {
+  margin-bottom: 2.5rem;
+}
+
+.portrait {
+  display: block;
+  width: 7.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.intro h1 {
+  margin-top: 1rem;
+}
+
+.bio {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.social {
+  display: flex;
+  gap: 6px;
+  margin: 0.5rem 0 0 -6px;
+  padding: 0;
+  list-style: none;
+}
+
+.social li + li {
+  margin-top: 0;
+}
+
+.social a {
+  display: block;
+  padding: 6px;
+}
+
+.social a:hover {
+  color: var(--text);
+}
+
+/* 24px is the icons' native grid. Keep whole multiples so the pixels stay even. */
+.social svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  shape-rendering: crispEdges;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.links li + li {
+  margin-top: 0;
+}
+
+main > section {
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+main > section + section {
+  margin-top: 2.25rem;
+}
+
+main article + article {
+  margin-top: 1.5rem;
+}
+
+.publication {
+  display: grid;
+  grid-template-columns: clamp(12rem, 32%, 20rem) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.publication img {
+  display: block;
+  border-radius: 4px;
+}
+
+.venue {
+  color: var(--muted);
+  font-style: italic;
+}
+
+footer {
+  margin-top: 3rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.credit {
+  font-size: 0.875rem;
+}
+
+.not-found h1 {
+  margin-bottom: 1rem;
+}
+
+/* Desktop: the photo, bio and icons sit in a right-hand column. */
+@media (min-width: 45rem) {
+  .home {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(13rem, 28%, 18rem);
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-areas:
+      "name   name"
+      "main   photo"
+      "main   bio"
+      "main   social"
+      "footer footer";
+    column-gap: clamp(2rem, 5%, 4rem);
+  }
+
+  .intro {
+    display: contents;
+  }
+
+  .intro h1 {
+    grid-area: name;
+    margin: 0 0 1.25rem;
+  }
+
+  .portrait {
+    grid-area: photo;
+    width: 100%;
+  }
+
+  .bio {
+    grid-area: bio;
+    margin-top: 1rem;
+  }
+
+  .social {
+    grid-area: social;
+    align-self: start;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
+@media (max-width: 34rem) {
+  body {
+    padding-top: 2.25rem;
+  }
+
+  .publication {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+}
